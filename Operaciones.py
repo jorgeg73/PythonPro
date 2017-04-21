@@ -6,29 +6,29 @@ opcion = input()
 while opcion <=
 if opcion == 1:
     print "Suma"
-    x = input(("Primer numero: "))
-    y = input (("Segundo numero: "))
-    sum = int(x + y)
-    print x, "+", y, "=", sum
+    x = input("Primer numero: ")
+    y = input ("Segundo numero: ")
+    suma = int(x + y)
+    print x, "+", y, "=", suma
 
 elif opcion == 2:
     print "Resta"
-    x = input(("Primer numero: "))
-    y = input(("Segundo numero: "))
+    x = input("Primer numero: ")
+    y = input("Segundo numero: ")
     res = int(x - y)
     print x, "-", y, "=", res
 
 elif opcion == 3:
     print "Multiplicacion"
-    x = input(("Primer numero: "))
-    y = input(("Segundo numero: "))
+    x = input("Primer numero: ")
+    y = input("Segundo numero: ")
     mul = int(x * y)
     print x, "*", y, "=", mul
 
 elif opcion == 4:
     print "Division"
-    x = input(("Primer numero: "))
-    y = input(("Segundo numero: "))
+    x = input("Primer numero: ")
+    y = input("Segundo numero: ")
     div = int(x / y)
     print x, "/", y, "=", div
 
