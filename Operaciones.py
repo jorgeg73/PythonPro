@@ -1,3 +1,9 @@
+def suma ():
+    (x + y)
+
+def resta ():
+    (x - y)
+
 print "Programa para multiplicar, Suma, Resta, Division"
 
 print ("Selecciona un numero\n 1. Suma\n 2. Resta\n 3. Multiplicacion\n 4. Division\n")
@@ -13,10 +19,13 @@ while (opcion != 5):
         y = input("Segundo numero: ")
         suma = int(x + y)
         print x, "+", y, "=", suma
-        continuar= input("Quieres otra operacion: ")
+        continuar = str(input("Quieres otra operacion si/no: "))
+        print continuar
 
-        if continuar == "si":
+        if continuar == 'si':
             print ("Selecciona un numero\n 1. Suma\n 2. Resta\n 3. Multiplicacion\n 4. Division\n")
+            opcion = 0
+            continuar = 0
         else:
             opcion = 5
 
