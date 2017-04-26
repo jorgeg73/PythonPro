@@ -12,13 +12,13 @@ print ("Selecciona\n \
 
 opcion = input()
 
-while opcion <= 4:
+while opcion >= 1 and opcion <= 4:
     num1 = int(input("primer numero? "))
     num2 = int(input("Segundo Numero?  "))
 
     if opcion == 1:
-        num1()
-        num2()
+       # num1()
+       # num2()
         yx = [num1, num2]
         r = sum(yx)
         print num1, "+", num2, "=", r
@@ -39,9 +39,8 @@ while opcion <= 4:
         print num1, "/", num2, "=", r
         opcion = 0
 
-    else:
-        opcion = 0
-        continuar = input("Quieres otra operacion? ")
+    elif opcion == 0:
+        continuar = input("Quieres otra operacion si/no? ")
         # print (input())
         #    if continuar == "si":
         #opcion = 0
