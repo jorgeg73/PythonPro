@@ -1,42 +1,41 @@
-des = True
-opcion = 1
-
-print "Operaciones basicas"
-print ("Selecciona\n \
-       1. Suma\n \
-       2. Resta\n \
-       3. Multiplicacion\n \
-       4. Division\n")
-opcion = input()
-
-while opcion <= 4 and des == True:
-
+def suma():
     num1 = int(input("primer numero? "))
     num2 = int(input("Segundo Numero?  "))
+    r = sum(yx)
+    print num1, "+", num2, "=", r
 
-    if opcion == 1:
-        yx = [num1, num2]
-        r = sum(yx)
-        print num1, "+", num2, "=", r
-        des = input("Quieres otra operacion si/no? ")
-                #if des == "si":
-                 #   des = True
+def Resta():
+    num1 = int(input("primer numero? "))
+    num2 = int(input("Segundo Numero?  "))
+    r = num1 - num2
+    print num1, "-", num2, "=", r
 
-    elif opcion == 2:
-            r = num1 - num2
-            print num1, "-", num2, "=", r
-            opcion = 0
+def multiplicacion():
+    num1 = int(input("primer numero? "))
+    num2 = int(input("Segundo Numero?  "))
+    r = num1 * num2
+    print num1, "*", num2, "=", r
 
-    elif opcion == 3:
-            r = num1 * num2
-            print num1, "*", num2, "=", r
-            opcion = 0
+def Division():
+    num1 = int(input("primer numero? "))
+    num2 = int(input("Segundo Numero?  "))
+    r = num1 / num2
+    print num1, "/", num2, "=", r
 
-    elif opcion == 4:
-            r = num1 / num2
-            print num1, "/", num2, "=", r
-            opcion = 0
+x = 0
+go = "si"
 
-else:
-    print "Gracias"
+print "Operaciones basicas"
 
+menu = [suma, Resta, multiplicacion, Division]
+
+while x < len(menu):
+    print menu[x].__name__, ", presiona ", "[" + str(x) + "]"
+    x += 1
+
+while go != "n":
+    c = input("Selecciona opcion: ")
+    menu[c]()
+    num1 = 0
+    num2 = 0
+    go = raw_input("Otra Operacion? [si/n]: ")
