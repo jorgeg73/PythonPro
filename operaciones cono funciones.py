@@ -38,4 +38,4 @@ while go != "n":
     menu[c]()
     num1 = 0
     num2 = 0
-    go = raw_input("Otra Operacion? [si/n]: ")
+    go = raw_input("Otra Operacion? [si/no]: ")
