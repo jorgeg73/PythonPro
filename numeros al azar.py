@@ -3,4 +3,9 @@ import random
 #numeros al azar
 print "Numeros al Azar"
 print random.random()
-print random.randint(-10000000000000000000000,10000000000000000000000)
+print "Da el rango:\n"
+
+enum= input ("Primer rango\n")
+enum1 = input ("Segundo Rango\n")
+
+print random.randint(enum,enum1)
