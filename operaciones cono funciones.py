@@ -1,7 +1,7 @@
 def suma():
     num1 = int(input("primer numero? "))
     num2 = int(input("Segundo Numero?  "))
-    r = sum(yx)
+    r = num1 + num2
     print num1, "+", num2, "=", r
 
 def Resta():
